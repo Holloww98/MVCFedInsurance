@@ -4,14 +4,24 @@ public class Employee {
 	public String employeeID;
 	public String position;
 	public String employeeName;
-
 	public Supervisor supervisor;
 	public String reviewPeriod;
 	public String username;
 	public String password;
 	public PerformanceReview employeePerformance;
 	
-
+	//Constructor
+	
+	public Employee(String anID, String aPosition, String aName, Supervisor aSupervisor, String aReviewPeriod, String aUser, String aPass, PerformanceReview aPerformance) {
+		this.employeeID = anID;
+		this.position = aPosition;
+		this.employeeName = aName;
+		this.supervisor = aSupervisor;
+		this.reviewPeriod = aReviewPeriod;
+		this.username = aUser;
+		this.password = aPass;
+		this.employeePerformance = aPerformance;
+	}
 	
 	//Gets and Sets
 	public String getEmployeeID() {
@@ -77,6 +87,14 @@ public class Employee {
 	
 	public void setEmployeePerformance(PerformanceReview aPerformance) {
 		this.employeePerformance = aPerformance;
+	}
+	
+	public String getEmployeePerformancePeriod() {
+		return this.reviewPeriod ;
+	}
+	
+	public void setEmployeePerformancePeriod(String aDate) {
+		this.reviewPeriod = aDate;
 	}
 
 

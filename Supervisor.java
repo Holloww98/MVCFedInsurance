@@ -4,12 +4,20 @@ package fedinsurance;
 public class Supervisor extends Employee {
     String supervisorID;
     String position;
-    Department department;
-
-    public Supervisor(String aSupervisorID, String aPosition, Department aDepartment) {
-        this.supervisorID = aSupervisorID;
+    
+    //Constructor
+    public Supervisor(String anID, String aPosition, String aName, Supervisor aSupervisor, String aReviewPeriod, String aUser, String aPass, PerformanceReview aPerformance,String aSupervisorID, String aPosition) {
+    	this.employeeID = anID;
+		this.position = aPosition;
+		this.employeeName = aName;
+		this.supervisor = aSupervisor;
+		this.reviewPeriod = aReviewPeriod;
+		this.username = aUser;
+		this.password = aPass;
+		this.employeePerformance = aPerformance;
+    	this.supervisorID = aSupervisorID;
         this.position = aPosition;
-        this.department = aDepartment;
+      
     }
 
     public String getSupervisorID() {

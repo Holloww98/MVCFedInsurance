@@ -1,12 +1,22 @@
 package fedinsurance;
+import java.util.ArrayList;*;
 
 public class Subordinates {
-	String teamID = "N/A";
-	String teamName = "n/a";
+	String teamID;
+	String teamName;
 	Supervisor teamSupervisor;
 	Arraylist[Employee] subordinateEmployees;
 	
 	
+	//Constructor
+	public Subordinates(String anID, String aName, Supervisor aSupervisor, Arraylist[Employee] aList) {
+		this.teamID = anID;
+		this.teamName = aName;
+		this.teamSupervisor = aSupervisor;
+		this.subordinateEmployees = aList;
+	}
+	
+	//gets and sets
 	public String getTeamID() {
 		return this.teamID;
 	}

@@ -1,13 +1,25 @@
 package fedinsurance;
 
 public class PerformanceReview {
-	String currentPerformanceGrade;
-	String performanceReviewID;
-	String currentReviewDate;
-	String previousReviewDate;
-	String performanceFeedback;
+	public String currentPerformanceGrade;
+	public String performanceReviewID;
+	public String currentReviewDate;
+	public String previousReviewDate;
+	public String performanceFeedback;
+	public Employee reviewedEmployee;
 	
+	//Constructor
 	
+	public PerformanceReview(String currentGrade, String reviewID, String currentDate, String previousDate, String feedback, Employee anEmployee ) {
+		this.currentPerformanceGrade = currentGrade;
+		this.performanceReviewID = reviewID;
+		this.currentReviewDate = currentDate;
+		this.previousReviewDate = previousDate;
+		this.performanceFeedback = feedback;
+		this.reviewedEmployee = anEmployee;
+	}
+	
+	//Gets and Sets
 	public String getCurrentPerformanceGrade() {
 		return this.currentPerformanceGrade;
 	}
