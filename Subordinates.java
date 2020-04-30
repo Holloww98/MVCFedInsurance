@@ -2,44 +2,44 @@ package fedinsurance;
 import java.util.ArrayList;*;
 
 public class Subordinates {
-	String teamID;
-	String teamName;
-	Supervisor teamSupervisor;
+	String team_id;
+	String team_name;
+	Supervisor team_supervisor;
 	Arraylist[Employee] subordinateEmployees;
 	
 	
 	//Constructor
 	public Subordinates(String anID, String aName, Supervisor aSupervisor, Arraylist[Employee] aList) {
-		this.teamID = anID;
-		this.teamName = aName;
-		this.teamSupervisor = aSupervisor;
+		this.team_id = anID;
+		this.team_name = aName;
+		this.team_supervisor = aSupervisor;
 		this.subordinateEmployees = aList;
 	}
 	
 	//gets and sets
 	public String getTeamID() {
-		return this.teamID;
+		return this.team_id;
 	}
 	public void setTeamID(String anID ) {
-		this.teamID = anID ;
+		this.team_id = anID ;
 	}
 	
 	public String getTeamName() {
-		return this.teamName;
+		return this.team_name;
 	}
 	public void setTeamName(String aName ) {
-		this.teamName = aName ;
+		this.team_name = aName ;
 	}
 	
 	public Supervisor getSupervisor() {
-		return this.supervisor;
+		return this.team_supervisor;
 	}
 	public void setSupervisor(Employee aSupervisor ) {
-		this.supervisor = aSupervisor ;
+		this.team_supervisor = aSupervisor ;
 	}
 	
 	public ArrayList[Employee] getSubordinateEmployees() {
-		return this.supervisor;
+		return this.subordinateEmployees;
 	}
 	public void setSubordinateEmployees(Arraylist[Employee] aGroupOfEmployees ) {
 		this.subordinateEmployees = aGroupOfEmployees ;

@@ -1,9 +1,9 @@
 package fedinsurance;
 
 public class Employee {
-	public String employeeID;
-	public String position;
-	public String employeeName;
+	public String emp_id;
+	public String emp_position;
+	public String emp_Name;
 	public Supervisor supervisor;
 	public String reviewPeriod;
 	public String username;
@@ -13,9 +13,9 @@ public class Employee {
 	//Constructor
 	
 	public Employee(String anID, String aPosition, String aName, Supervisor aSupervisor, String aReviewPeriod, String aUser, String aPass, PerformanceReview aPerformance) {
-		this.employeeID = anID;
-		this.position = aPosition;
-		this.employeeName = aName;
+		this.emp_id = anID;
+		this.emp_position = aPosition;
+		this.emp_Name = aName;
 		this.supervisor = aSupervisor;
 		this.reviewPeriod = aReviewPeriod;
 		this.username = aUser;
@@ -25,27 +25,27 @@ public class Employee {
 	
 	//Gets and Sets
 	public String getEmployeeID() {
-		return this.employeeID;
+		return this.emp_id;
 	}
 	
 	public void setEmployeeID(String aEmployeeID) {
-		this.employeeID = aEmployeeID;
+		this.emp_id = aEmployeeID;
 	}
 	
 	public String getEmployeePosition() {
-		return this.position;
+		return this.emp_position;
 	}
 	
 	public void setPosition(String aPosition) {
-		 this.position = aPosition ;
+		 this.emp_position = aPosition ;
 	}
 	
 	public String getEmployeeName() {
-		return this.employeeName ;
+		return this.emp_Name;
 	}
 	
 	public void setEmployeeName(String aEmployeeName) {
-		this.employeeName = aEmployeeName;
+		this.emp_Name = aEmployeeName;
 	}
 	
 

@@ -1,30 +1,39 @@
 package fedinsurance;
 
 public class PerformanceReview {
-	public String currentPerformanceGrade;
+	public String currentReview_Grade;
+	public String previousReview_Grade;
 	public String performanceReviewID;
-	public String currentReviewDate;
-	public String previousReviewDate;
-	public String performanceFeedback;
+	public String currentReview_Date;
+	public String previousReview_Date;
+	public String performance_Feedback;
 	public Employee reviewedEmployee;
 	
 	//Constructor
 	
-	public PerformanceReview(String currentGrade, String reviewID, String currentDate, String previousDate, String feedback, Employee anEmployee ) {
-		this.currentPerformanceGrade = currentGrade;
+	public PerformanceReview(String currentGrade, String reviewID, String currentDate, String previousDate, String feedback, Employee anEmployee, String aPreviousGrade ) {
+		this.currentReview_Grade = currentGrade;
 		this.performanceReviewID = reviewID;
-		this.currentReviewDate = currentDate;
-		this.previousReviewDate = previousDate;
-		this.performanceFeedback = feedback;
+		this.currentReview_Date = currentDate;
+		this.previousReview_Date = previousDate;
+		this.performance_Feedback = feedback;
 		this.reviewedEmployee = anEmployee;
+		this.previousReview_Grade = aPreviousGrade
 	}
 	
 	//Gets and Sets
 	public String getCurrentPerformanceGrade() {
-		return this.currentPerformanceGrade;
+		return this.currentReview_Grade;
 	}
 	public void setCurrentPerformanceGrade(String aGrade) {
 		this.currentPerformanceGrade = aGrade;
+	}
+	
+	public String getPreviousPerformanceGrade() {
+		return this.previousReview_Grade;
+	}
+	public void setPreviousPerformanceGrade(String aGrade) {
+		this.previousReview_Grade = aPreviousGrade;
 	}
 	
 	public String getPerformanceReviewID() {
@@ -49,10 +58,10 @@ public class PerformanceReview {
 	}
 	
 	public String getPerformanceFeedback() {
-		return this.performanceReviewID;
+		return this.performance_Feedback;
 	}
 	public void setPerformanceFeedback(String aFeedback) {
-		this.previousReviewDate = aFeedback;
+		this.performance_Feedback = aFeedback;
 	}
 	
 	

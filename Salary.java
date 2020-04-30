@@ -1,64 +1,66 @@
 package fedinsurance;
 
 public class Salary {
-    int salaryMax;
-    int salaryMin;
-    String salaryRange;
-    String salaryType;
-    int projectedSalary;
-    int currentSalary;
+    String sal_id;
+	int sal_max;
+    int sal_min;
+    String sal_Range;
+    String sal_Type;
+    int sal_actualAmt;
+    int sal_projectedAmt;
+
 
     //Constructor
     
     public Salary(int aSalarymax, int aSalarymin, String aRange, String aType, int aProjection, int aCurrentSalary) {
-        this.salaryMax = aSalarymax;
-        this.salaryMin = aSalarymin;
-        this.salaryRange = aRange;
-        this.salaryType = aType;
-        this.projectedSalary = aProjection;
-        this.currentSalary = aCurrentSalary;
+        this.sal_max = aSalarymax;
+        this.sal_min = aSalarymin;
+        this.sal_Range = aRange;
+        this.sal_Type = aType;
+        this.sal_projectedAmt = aProjection;
+        this.sal_actualAmt = aCurrentSalary;
     }
     //gets and sets
     public int getSalaryMin() {
-        return this.salaryMin;
+        return this.sal_min;
     }
     public void setSalaryMin(int aSalary) {
-        this.salaryMin = aSalary;
+        this.sal_min = aSalary;
     }
 
     public int getSalaryMax() {
-        return this.salaryMax;
+        return this.sal_max;
     }
     public void setSalaryMax(int aSalary) {
-        this.salaryMax = aSalary;
+        this.sal_max = aSalary;
     }
     
     public String getSalaryRange() {
-        return this.salaryRange;
+        return this.sal_Range;
     }
     public void setSalaryRange(String aSalary) {
-        this.salaryRange = aSalary;
+        this.sal_Range = aSalary;
     }
     
     public String getSalaryType() {
-        return this.salaryType;
+        return this.sal_Type;
     }
     public void setSalaryType(String aSalary) {
-        this.salaryType = aSalary;
+        this.sal_Type = aSalary;
     }
     
     public int getProjectedSalary() {
-        return this.projectedSalary;
+        return this.sal_projectedAmt;
     }
     public void setProjectedSalary(int aSalary) {
-        this.projectedSalary = aSalary;
+        this.sal_projectedAmt = aSalary;
     }
     
     public int getCurrentSalary() {
-        return this.currentSalary;
+        return this.sal_actualAmt;
     }
     public void setCurrentSalary(int aSalary) {
-        this.currentSalary = aSalary;
+        this.sal_actualAmt = aSalary;
     }
     
     

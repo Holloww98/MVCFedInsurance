@@ -1,41 +1,41 @@
 package fedinsurance;
 
 public class Budget{
-	public String budgetID;
-	public String budgetStartDate;
-	public String budgetEndDate;
-	public int budgetTotal;
+	public String budget_id;
+	public String budget_startDate;
+	public String budget_endDate;
+	public int budget_amt;
 	
 	public String getBudgetID() {
-		return this.budgetID;
+		return this.budget_id;
 	}
 	
 	public void setBudgetID(String aBudget) {
-		this.budgetID = aBudget;
+		this.budget_id = aBudget;
 	}
 	
 	public String getBudgetStartDate() {
-		return this.budgetStartDate;
+		return this.budget_startDate;
 	}
 	
 	public void setBudgetStartDate(String aBudgetDate) {
-		this.budgetStartDate = aBudgetDate;
+		this.budget_startDate = aBudgetDate;
 	}
 	
 	public String getBudgetEndDate() {
-		return this.budgetStartDate;
+		return this.budget_startDate;
 	}
 	
 	public void setBudgetEndDate(String aBudgetDate) {
-		this.budgetEndDate = aBudgetDate;
+		this.budget_endDate = aBudgetDate;
 	}
 	
 	public int getBudgetTotal() {
-		return this.budgetTotal;
+		return this.budget_amt;
 	}
 	
 	public void setBudgetTotal(int aBudgetTotal) {
-		this.budgetTotal = aBudgetTotal;
+		this.budget_amt = aBudgetTotal;
 	}
 
 	

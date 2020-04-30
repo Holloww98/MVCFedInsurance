@@ -1,48 +1,48 @@
 package fedinsurance;
 
 public class Promotion {
-	public String promotionID;
-	public String promotionTitle;
-	public String lastPromotionDate;
-	public String promotionDate;
+	public String promotion_id;
+	public String promotion_title;
+	public String lastPromotion_Date;
+	public String promotion_Date;
 	public Employee promotedEmployee;
 	
 	//Constructor
 	public Promotion(String anID, String aTitle, String lastDate, String thisDate, Employee aEmployee) {
-		this.promotionID = anID;
-		this.promotionTitle = aTitle;
-		this.lastPromotionDate = lastDate;
-		this.promotionDate = thisDate;
+		this.promotion_id = anID;
+		this.promotion_title = aTitle;
+		this.lastPromotion_Date = lastDate;
+		this.promotion_Date = thisDate;
 		this.promotedEmployee = aEmployee;
 	}
 	
 	//gets and sets
 	public String getPromotionID() {
-		return this.promotionID;
+		return this.promotion_id;
 	}
 	public void setPromotionID(String anID) {
-		this.promotionID = anID;
+		this.promotion_id = anID;
 	}
 	
 	public String getPromotionTitle() {
-		return this.promotionID;
+		return this.promotion_title;
 	}
 	public void setPromotionTitle(String aTitle) {
-		this.promotionTitle = aTitle;
+		this.promotion_title = aTitle;
 	}
 	
 	public String getlastPromotionDate() {
-		return this.lastPromotionDate;
+		return this.lastPromotion_Date;
 	}
 	public void setlastPromotionDate(String aDate) {
-		this.lastPromotionDate = aDate;
+		this.lastPromotion_Date = aDate;
 	}
 	
 	public String getlastPromotionDate() {
-		return this.lastPromotionDate;
+		return this.promotion_Date;
 	}
 	public void setlastPromotionDate(String aDate) {
-		this.lastPromotionDate = aDate;
+		this.promotion_Date = aDate;
 	}
 	
 	public Employee getPromotedEmployee() {
